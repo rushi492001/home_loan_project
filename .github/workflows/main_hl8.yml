@@ -56,11 +56,11 @@ jobs:
           name: python-app
       
       - name: Login to Azure
-        uses: azure/login@v2
-        with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E84799A28F84410DA9976ED5F06DA3AF }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_32FC5638ABE743139A43DD4772B28C0C }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_E94A3CE205324B90BD42C86FC4A72795 }}
+  uses: azure/login@v2
+  with:
+    client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_4968EC52CB4C483F8F782F261306805F }}
+    tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_C1F1773F63B04DEB9AE125F9CE6D94F0 }}
+    subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_EC6028E44B0D4BB6A1E0B08FDC02FE08 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
